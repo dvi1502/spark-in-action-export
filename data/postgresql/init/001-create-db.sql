@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS spark_labs;
+CREATE DATABASE spark_labs;

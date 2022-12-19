@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Dec 19 20:40:34 MSK 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0185-2b79-15d1-00001c1fbc50 
+on database directory /mnt/data/sources/~PyProjects/spark-in-action-export/lab910_hive/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@67ac7424 
+Loaded from file:/mnt/data/sources/~PyProjects/spark-in-action-export/venv/lib/python3.8/site-packages/pyspark/jars/derby-10.14.2.0.jar
+java.vendor=Amazon.com Inc.
+java.runtime.version=1.8.0_352-b08
+user.dir=/mnt/data/sources/~PyProjects/spark-in-action-export/lab910_hive
+os.name=Linux
+os.arch=amd64
+os.version=5.15.0-56-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

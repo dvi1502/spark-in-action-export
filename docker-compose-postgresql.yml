@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  postgres:
+    restart: always
+    image: postgres:13.3
+    container_name: "postgresql-spark_labs"
+    environment:
+      POSTGRES_DB: "spark_labs"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "1234"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    ports:
+      - "15432:5432"
+    volumes:
+      - ./data/postgresql/init:/docker-entrypoint-initdb.d
+      - ./data/postgresql/db:/var/lib/postgresql/data
+    networks:
+      pnet:
+        ipv4_address: 172.23.0.6
+
+networks:
+  pnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.23.0.0/16
+
+volumes:
+  pgdata:
+    driver: local
